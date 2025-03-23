@@ -32,11 +32,11 @@ const NavigationBar: React.FC = () => {
     
     {/* LIST AREA */}
     <ul className=" justify-center  items-center lg:space-x-6 md:space-x-2 bg-transparent  px-2 py-2 text-[#FFFFFF] hidden md:flex sm:hidden lg:w-[711px] font-[Figtree]">
-        <li><Link href='/' className={`${isActiveMobile('/')} hover:text-green-500 duration-500 transition-colors lg:text-4  text-4 `} >Models</Link></li>
-        <li><Link href='/Pricing'className={`${isActiveMobile('/About')} hover:text-green-500 duration-500 transition-colors lg:text-4 text-4 `} >Pricing</Link></li>
-        <li><Link href='/AboutUs'className={`${isActiveMobile('/About')} hover:text-green-500 duration-500 transition-colors lg:text-4 text-4 `} >About Us</Link></li>
-        <li><Link href='/ContactUs'className={`${isActiveMobile('/About')} hover:text-green-500 duration-500 transition-colors lg:text-4 text-4 `} >Contact Us</Link></li>
-        <li><Link href='/CustomModels'className={`${isActiveMobile('/ContactUs')} hover:text-green-500 duration-500 transition-colors lg:text-4 text-4 `} >Custom Models</Link></li>
+        <li><Link href='/' className={`${isActive('/')} hover:text-green-500 duration-500 transition-colors lg:text-4  text-4 `} >Models</Link></li>
+        <li><Link href='/Pricing'className={`${isActive ('/About')} hover:text-green-500 duration-500 transition-colors lg:text-4 text-4 `} >Pricing</Link></li>
+        <li><Link href='/AboutUs'className={`${isActive ('/About')} hover:text-green-500 duration-500 transition-colors lg:text-4 text-4 `} >About Us</Link></li>
+        <li><Link href='/ContactUs'className={`${isActive ('/About')} hover:text-green-500 duration-500 transition-colors lg:text-4 text-4 `} >Contact Us</Link></li>
+        <li><Link href='/CustomModels'className={`${isActive ('/ContactUs')} hover:text-green-500 duration-500 transition-colors lg:text-4 text-4 `} >Custom Models</Link></li>
     </ul>
     
     <Link href="/ContactUs">
