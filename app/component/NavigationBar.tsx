@@ -10,7 +10,7 @@ import Logo from '../../public/logo.png'
 const NavigationBar: React.FC = () => {
 
     const currentPath = usePathname();
-    const isActive = (path: string) => (currentPath === path ? 'text-[#044305] font-bold' : 'text-[#FFFFFF]');
+    const isActive = (path: string) => (currentPath === path ? 'text-[#FFFFFF] font-bold' : 'text-[#FFFFFF]');
     const isActiveMobile = (path: string) => (currentPath === path ? 'text-[#FFFFFF] font-bold' : 'text-[#FFFFFF]');
 
     const [openMenu, setOpenMenu] = useState(false);
